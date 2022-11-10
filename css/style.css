@@ -1,0 +1,275 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+.border{
+ position: relative;
+   width: 120px;
+   height: 30px;
+   padding-top:7px ;
+}.header a i{color: black;
+font-size: 30px;
+padding-left: 30px;
+transform: translateY(-5px);}
+.header a{color: #704F4F;
+font-size: 20px;
+font-weight: 800;
+padding-top: 20px;}
+.border::after{content: "";
+top: 0;
+position: absolute;
+width: 0;
+height: 0;
+left: 0;
+transition: .5s;}
+.border:hover::after{width: 100%;
+
+   height: 125%;
+
+ border-right: 3.5px solid #704F4F;
+
+ border-left: 3.5px solid #704F4F;
+
+  }
+.border::before{content: "";
+top: 0;
+position: absolute;
+width: 0;
+height:100%;
+left: 0;
+transition: 1.5s;}
+.border:hover::before{width: 106%;
+   height: 110%;
+ border-top: 3.5px solid #704F4F;
+ border-bottom:3.5px solid #704F4F; }
+
+.border div{display: grid;
+   width: 290px;
+   position: absolute;
+   grid-gap: 5px 10px ;
+   z-index: 5;
+visibility: hidden;
+grid-template-columns: repeat(3,30%);
+transform: translate(-260px,20px);
+border: 1px solid #9F8772;
+background-color: white;
+}
+.hov{position: relative;}
+#zozo:hover .tabels{visibility: visible;}
+
+/*#zozo{background-color: red;}*/
+
+
+body{margin: 50px 90px; }
+.line{width: 90px;
+height: 3px;
+background-color:#704F4F;
+margin: 30px auto;
+}
+.line:hover{transform: scale(2,1);
+transition: .8s;}
+
+
+a{text-decoration: none; 
+
+}
+
+.header{transform: translateY(-25px);}
+ul{list-style: none;
+   cursor: pointer;
+/*   transform: translateY(-10px);
+*/	display: flex;
+  align-items: center;
+   justify-content: space-between;
+/*position: relative;*/}
+li{position: relative;
+   text-align: center;
+}
+
+nav{height:30px ;
+width: 900px;
+/*border:1px solid red;
+*/transform: translate(20px)
+
+}
+.bag{height: 20px;
+width :15px;
+text-align: center;
+border-radius: 50%;
+background-color: #9F8772;
+color: white;}
+.header{display: flex;
+margin-top: 50px ;
+position: relative;}
+.parent1 div{flex-grow: 4;}
+.parent1{display: flex;
+justify-content: space-evenly;
+margin: 100px 0px;}
+
+main img{width: 100%;}
+
+.titles{text-align: center;
+   margin-top: 80px;
+   font-size: 25px;
+}
+
+.parent1 span{font-weight: 900;
+font-size: 20px;}
+.parent1 i{visibility: hidden;
+   margin-left: 125px;
+}
+.parent1 p{color: grey;
+font-size: 18px;}
+.parent1 div:hover i{visibility: visible;
+font-size: 30px;
+background-color: ;
+color:brown ;}
+
+.part2{margin: 50px 0px;
+   display: flex;
+justify-content: space-evenly;}
+
+.e1,.e2{
+padding: 20px;
+flex-grow: 1;
+transition: .4s;}
+.e1{background-image: url(../images/e1.jpg);
+background-size: cover;}
+.e2{background-image: url(../images/e2.jpg);
+background-size: cover;
+}
+.part1{display: grid;
+   height: 300px;
+grid-template-columns: 2fr 1fr 1fr;
+grid-gap: 15px;}
+.e1 p,.e2 p{font-weight: 900;
+font-size: 20px;}
+.e1 span,.e2 span{font-size: 20px;
+color: brown;}
+.pragraph{*/
+padding: 12px;
+background-color:#EDEDED;}
+.lines{display: flex;
+   transform: translate(350px);
+justify-content: space-evenly;
+align-items: flex-end;
+height: 150px;
+width: 190px;
+}
+.lines div{width: 50px;
+height: 2px;
+background-color: #704F4F;
+/*margin-left: 50px;*/}
+.e1:hover,.e2:hover{transform: scale(1.05,1.1);
+transition: .4s;}
+
+.parent2{margin-top: 100px;}
+
+.p2title{display: inline;
+font-size: 35px;}
+.pragraph i{font-size: 40px;
+color: brown;}
+.pragraph p{padding-left: 40px;
+
+position: absolute;}
+
+
+/*section 3*/
+
+.parent3{display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 12px;
+margin-top: 50px;}
+.price{background-color: blue;}
+
+.parent3 p{font-size: 19px;}
+.parent3 i{color: yellow;}
+.parent3 .o{color: black;}
+.t{visibility: hidden;
+position: absolute;}
+.big{position: relative;}
+.parent3 div:hover .t{visibility: visible;}
+
+.image{position: relative;
+z-index: -1;}
+.div1,.div2,.div3{position: absolute;
+	content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;}
+    .div1{background-image: url(../images/chair2.jpg);}
+.div2{background-image: url(../images/chair4.jpg);}
+.div3{background-image: url(../images/chair6.jpg);}
+.parent3 div:hover .div1,.parent3 div:hover .div2, .parent3 div:hover .div3{color: brown;
+   transform: rotate(360deg);
+ opacity:.9;
+    visibility: visible;
+    transition: .5s;}
+.icons{display: flex;
+   height: 100%;
+   width: 200px;
+   margin: auto;
+   flex-direction: row;
+  position: relative;
+   justify-content: center;
+justify-content: space-evenly;
+align-items: center;
+}
+.icons i{}
+.square{width: 40px;
+   position: relative;
+height: 40px;
+background-color: #704F4F;}
+.icons i{font-size: 30px;
+   position: absolute;
+color: white;
+top: 10%;
+left: 12%;
+transform: translate(12%,10%);}
+    footer ul{display: flex;
+      justify-content: space-evenly;}
+.ul{width: 600px;
+margin: auto;
+font-size: 20px;}
+      .finaltable{display: grid;
+         grid-template-columns: repeat(3, 30%);
+         border:2px solid #704F4F ;
+         width: 290px;
+         grid-gap: 5px 10px;
+         background-color: white;
+         visibility: hidden;
+         transform: translateY(22px);
+         color: #704F4F;}
+         .border:hover .finaltable{visibility: visible;}
+#part2{margin: 20px auto;
+display: flex;
+flex-direction: row wrap;
+justify-content: space-evenly;}
+#part2 .service{
+   flex: 1;
+   border-right: 2px solid #704F4F;
+   padding: 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;}
+#part2 .service .serviceicon{
+background-size: 100% 100%;
+height: 10vw;
+width: 10vw;
+margin: auto/*0 0 1vw 2vw*/;
+transition: all .5s;
+background-image: url(../images/ship12.PNG);}
+#part2 .service:hover .serviceicon{background-position: center -200px;} 
+#part2 .service .serviceicon img{width: 10vw;
+height: 0;
+transform: translateY(12vw);
+transition: all .5s;}
+#part2 .service:hover .serviceicon img{transform: translateY(0);
+height: 10vw;
+visibility: visible;}              
+#part2 .service .serviceinfo{z-index: 1;}
+   #part2 .service .serviceinfo p{color: grey;}
+h4{font-weight: 900;
+font-size: 20px;}
